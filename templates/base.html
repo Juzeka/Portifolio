@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+{% include 'parciais/_head.html' %}
+
+<body>
+    <div id="video">
+        <div class="preloader">
+            <div class="preloader-bounce">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        {% include 'parciais/_header.html' %}
+        
+        {% include 'parciais/_sobre.html' %}
+            
+        {% include 'parciais/_servicos.html' %}
+        
+        {% include 'parciais/_portifolio.html' %}
+        
+        {% include 'parciais/_contatos.html' %}
+
+        {% include 'parciais/_scripts.html' %}
+</body>
+
+</html>

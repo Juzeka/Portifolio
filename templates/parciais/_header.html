@@ -1,0 +1,45 @@
+{% load static %}
+
+
+<header id="header">
+    <div class="container-fluid">
+        <div class="navbar">
+            <a href="" id="logo" title="Rafae Gomes de Almeida">
+                <img src="{% static 'images/logo.png' %}" alt="">
+            </a>
+            <div class="navigation-row">
+                <nav id="navigation">
+                    <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                    <div class="nav-box navbar-collapse">
+                        <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                            <li data-menuanchor="inicio" class="active"><a href="#inicio">Inicio</a></li>
+                            <li data-menuanchor="sobre"><a href="#sobre">Sobre</a></li>
+                            <li data-menuanchor="servicos"><a href="#servicos">Serviços</a></li>
+                            <li data-menuanchor="portifolio"><a href="#portifolio">Portifólio</a></li>
+
+                            <li data-menuanchor="contato"><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<video autoplay muted loop id="myVideo">
+    <source src="{% static 'images/fundo.mp4' %}" type="video/mp4">
+</video>
+
+<div id="fullpage" class="fullpage-default">
+
+    <div class="section animated-row" data-section="inicio">
+        <div class="section-inner">
+            <div class="welcome-box">
+                <h1 id="titulo" class="welcome-title animate" data-animate="fadeInUp">Portifólio Pessoal</h1>
+                <span class="welcome-first animate" data-animate="fadeInUp">Rafael Gomes de Almeida</span>
+                <div class="scroll-down next-section animate data-animate=" ><img
+                        src="{% static 'images/mouse-scroll.png' %}" alt=""><span>Scroll Down</span></div>
+            </div>
+        </div>
+    </div>

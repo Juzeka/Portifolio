@@ -1,0 +1,32 @@
+{% load static %}
+<div class="section animated-row" data-section="portifolio">
+    <div class="section-inner">
+        <div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                    <span>Portifólio</span>
+                    <h2>Projetos desenvolvidos</h2>
+                </div>
+                <div class="gallery-section">
+                    <div class="gallery-list owl-carousel">
+                        {% for projeto in projetos %}
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="portfolio-item">
+                                    <div class="thumb">
+                                        <img src="{{projeto.image.url}}" width="400" height="370" alt="">
+                                    </div>
+                                    <div class="thumb-inner animate" data-animate="fadeInUp">
+                                        <h4>{{projeto.name}}</h4>
+                                        <p>Categoria: {{projeto.categoria}}</p>
+                                        <p>Tecnologias: {{projeto.tecnology}}</p>
+                                        <p>Descrição: {{projeto.descrition}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+{% load static %}
+
+<div class="section animated-row" data-section="contato">
+    <div class="section-inner">
+        <div class="row justify-content-center">
+            <div class="col-9 col-md-7 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                    <span>Contato</span>
+                    <h2>Entrar em contato</h2>
+                </div>
+                <div class="contact-section">
+                    <div class="row">
+                        <div class="col-md-5  animate" data-animate="fadeInUp">
+                            <div class="contact-box">
+                                <div class="contact-row">
+                                    <i class="fa fa-envelope"></i> rafaelgomesalmeida@hotmail.com
+                                </div>
+                                <div class="contact-row">
+                                    <i class="fa fa-phone"></i> 86 99821-5671
+                                </div>
+                                <div class="contact-row">
+                                    <i class="fa fa-map-marker"></i> Trabalho Remoto
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6  animate" data-animate="fadeInUp">
+                            <form  method="POST" action="{% url 'contato' %}">
+                                {% csrf_token %}
+                                <div class="input-field">
+                                    <input class="form-control" type="text" name="name" maxlength="200" required id="id_name" required placeholder="Nome">
+                                </div>
+                                <div class="input-field">
+                                    <input class="form-control" type="email" name="email" maxlength="254" required id="id_email" required placeholder="Email">
+                                    
+                                </div>
+                                <div class="input-field">
+                                    <input class="form-control" type="text" name="motiv" maxlength="200" id="id_motiv" required placeholder="Motivo">
+                                </div>
+                                <div class="input-field">
+                                    <textarea class="form-control" name="message" cols="40" rows="10" required id="id_message" required placeholder="Menssagem"></textarea>
+                                </div>
+                                <button class="btn" type="submit">Enviar</button>
+                            </form>
+                            <div id="form-messages" class="mt-3 mb-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="social-icons">
+<div class="text-right">
+    <ul class="social-icons">
+        <li><a href="https://www.instagram.com/gomes_raff/" title="Instagram"><i
+                    class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/rafaelgomesdealmeida/" title="Linkedin"><i
+                    class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/Juzeka" title="GitHub"><i class="fa fa-github"></i></a></li>
+    </ul>
+</div>
+</div>
+</div>
