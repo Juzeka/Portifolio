@@ -26,7 +26,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['portifoliopessoal.herokuapp.com','rafaelgomesalmeida.com.br']
+ALLOWED_HOSTS = ['portifoliopessoal.herokuapp.com']
 
 
 # Application definition
